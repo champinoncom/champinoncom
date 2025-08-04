@@ -10,10 +10,10 @@ const Header = () => {
 
   const navigationItems = [
     { path: "/", label: "Inicio" },
-    { path: "/actualidad", label: sections.actualidad.name },
-    { path: "/economia", label: sections.economia.name },
-    { path: "/filosofia", label: sections.filosofia.name },
-    { path: "/learning", label: sections.learning.name },
+    { path: "/section/actualidad", label: sections.actualidad.name },
+    { path: "/section/economia", label: sections.economia.name },
+    { path: "/section/filosofia", label: sections.filosofia.name },
+    { path: "/section/learning", label: sections.learning.name },
     { path: "/about", label: sections.about.name },
   ];
 

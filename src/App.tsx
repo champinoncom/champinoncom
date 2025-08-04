@@ -21,10 +21,7 @@ const App = () => (
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/actualidad" element={<SectionPage />} />
-            <Route path="/economia" element={<SectionPage />} />
-            <Route path="/filosofia" element={<SectionPage />} />
-            <Route path="/learning" element={<SectionPage />} />
+            <Route path="/section/:section" element={<SectionPage />} />
             <Route path="/about" element={<About />} />
             <Route path="/article/:id" element={<ArticlePage />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
