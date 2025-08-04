@@ -92,7 +92,7 @@ export const articles: Article[] = [
       
       <p>Con más corazón que cabeza y para cometer tal hazaña, Eloy pidió una lata de petróleo para incendiar una de las casas y una cuerda para que le atasen y que recuperasen su cadáver una vez caído. Que dichosa fue su suerte cuando pasó a las líneas enemigas con vida mientras las balas le silbaban, pudiendo quemar el fuerte enemigo y liberando su ejército.</p>
       
-      <img src="/src/assets/cascorro-statue.jpg" alt="Estatua de Eloy Gonzalo en la Plaza de Cascorro, Madrid" style="width: 100%; max-width: 600px; height: auto; margin: 20px 0; border-radius: 8px;" />
+      <img src="/images/cascorro-statue.jpg" alt="Estatua de Eloy Gonzalo en la Plaza de Cascorro, Madrid" style="width: 100%; max-width: 600px; height: auto; margin: 20px 0; border-radius: 8px;" />
       
       <h2>El famoso banquete</h2>
       <p>Tras el desbloqueo y dada la crítica situación de hambruna de las tropas españolas, pudieron rehacerse y volver al asentamiento base donde al enterarse de dicha gesta prepararon un banquete a las tropas y en especial a Eloy, por tan valerosa hazaña. Y en este momento, se dice que cuando Eloy llegó no pudo aguantar su hambre, internándose en las cocinas para saciar su gula, se dice que se tragó un fogón.</p>
