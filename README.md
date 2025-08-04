@@ -1,73 +1,88 @@
-# Welcome to your Lovable project
+# champinon.com
 
-## Project info
+A beautiful, maintainable blog website built with React, TypeScript, and Tailwind CSS.
 
-**URL**: https://lovable.dev/projects/97a51ea7-5a61-4380-a833-6093f9986918
+## Features
 
-## How can I edit this code?
+- 📱 **Mobile-first responsive design**
+- 📝 **Easy content management** - Add articles by editing simple data files
+- 🎨 **Beautiful UI** with custom design system
+- 🚀 **Fast and modern** - Built with Vite and React
+- 📚 **Multiple sections** - Actualidad, Economía, Filosofía, Learning Lessons
+- 🔍 **SEO friendly** structure
 
-There are several ways of editing your application.
+## How to Add New Articles
 
-**Use Lovable**
+Adding new articles is simple! Just edit the `src/data/articles.ts` file:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/97a51ea7-5a61-4380-a833-6093f9986918) and start prompting.
+1. Open `src/data/articles.ts` in your editor
+2. Add a new article object to the `articles` array:
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```typescript
+{
+  id: "unique-id",
+  title: "Your Article Title",
+  excerpt: "Brief description of your article...",
+  content: `
+    <p>Your HTML content here...</p>
+    <h2>Section Header</h2>
+    <p>More content...</p>
+  `,
+  section: "actualidad", // or "economia", "filosofia", "learning", "about"
+  date: "2024-01-25",
+  readTime: 5, // minutes
+  tags: ["tag1", "tag2"],
+  featured: false // set to true for featured articles
+}
 ```
 
-**Edit a file directly in GitHub**
+3. Save the file and your new article will appear automatically!
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Sections
 
-**Use GitHub Codespaces**
+- **Actualidad** - Current events and news analysis
+- **Economía** - Economic and financial analysis
+- **Filosofía** - Philosophical reflections and thoughts
+- **My Learning Lessons** - Personal experiences and learnings
+- **Sobre nosotros** - About page
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Development
 
-## What technologies are used for this project?
+```bash
+# Install dependencies
+npm install
 
-This project is built with:
+# Start development server
+npm run dev
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+# Build for production
+npm run build
+```
 
-## How can I deploy this project?
+## Project Structure
 
-Simply open [Lovable](https://lovable.dev/projects/97a51ea7-5a61-4380-a833-6093f9986918) and click on Share -> Publish.
+```
+src/
+├── components/          # Reusable UI components
+├── data/               # Article data and configuration
+├── pages/              # Page components
+├── lib/                # Utilities
+└── index.css           # Design system and global styles
+```
 
-## Can I connect a custom domain to my Lovable project?
+## Content Management
 
-Yes, you can!
+The blog is designed to be easily maintainable through code:
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+- **Articles**: Edit `src/data/articles.ts` to add/modify articles
+- **Sections**: Modify section info in `src/data/articles.ts`
+- **Design**: Customize the design system in `src/index.css` and `tailwind.config.ts`
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## Publishing Workflow
+
+1. Edit articles in VS Code
+2. Commit changes to git
+3. Push to your repository
+4. Deploy automatically (if connected to a deployment service)
+
+This approach gives you full control over your content while keeping everything version-controlled and easy to manage.

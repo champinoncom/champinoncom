@@ -52,6 +52,11 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Blog-specific colors
+				'article-bg': 'hsl(var(--article-background))',
+				'article-border': 'hsl(var(--article-border))',
+				'section-highlight': 'hsl(var(--section-highlight))',
+				'warm-accent': 'hsl(var(--warm-accent))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -67,6 +72,14 @@ export default {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			backgroundImage: {
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-card': 'var(--gradient-card)',
+				'gradient-section': 'var(--gradient-section)',
+			},
+			fontFamily: {
+				'serif': ['Merriweather', 'Georgia', 'serif'],
 			},
 			keyframes: {
 				'accordion-down': {
