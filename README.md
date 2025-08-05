@@ -1,3 +1,5 @@
+www.champinon.site
+
 # champinon.com
 
 A beautiful, maintainable blog website built with React, TypeScript, and Tailwind CSS.
